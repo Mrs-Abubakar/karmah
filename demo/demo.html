@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Don't touch your face -- now with AI</title>
+  <link rel="stylesheet" href="https://unpkg.com/carbon-components@latest/css/carbon-components.css" />
+  <link rel="stylesheet" href="css/track.css">
+</head>
+
+<body class="bx--body p20">
+  <!-- <img id="img" src="hand.jpg"/>  -->
+  <div class="p20" style="font-size: 24px">
+    There is currently no vaccine to prevent coronavirus disease 2019 (COVID-19). The best way to prevent illness is to avoid being exposed to this virus. However the CDC suggests: "Avoid touching your eyes, nose, and mouth." This is hard for some people, including myself. Can AI help? This tracks whether you bring your hands close to your face. 
+  </div>
+  <div class="mb10">
+    <button  id="trackbutton" class="bx--btn bx--btn--secondary" type="button" disabled>
+      Start/stop
+    </button>
+    <button id="nextimagebutton" style="visibility: hidden" class="mt10 bx--btn bx--btn--secondary" type="button" disabled>
+      Next Image
+    </button>
+    
+ <div id="updatenote" class="updatenote mt10" style="visibility: hidden" > loading model ..</div>
+  </div>
+  <video class="videobox canvasbox" autoplay="autoplay" id="myvideo" style="visibility: hidden"></video>
+  <canvas id="canvas" class="border canvasbox"></canvas>
+  <div class="mt10">
+    <img src="images/1.jpg" class="canvasbox  hidden" id="handimage" alt="">
+
+  </div>
+
+  <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -112,7 +112,7 @@ function runDetection() {
         context.textAlign = "center";
 
         if (predictions.length > 0){
-            context.fillText("Stop biting!", canvas.width/2, canvas.height/2);
+            context.fillText("Stop touching!", canvas.width/2, canvas.height/2);
             beep();
         // sendNotification({
         //   title: 'New Notification',
