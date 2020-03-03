@@ -1,0 +1,41 @@
+{
+  "name": "handtrackjs",
+  "version": "0.0.13",
+  "description": "Handtrackjs: A library for prototyping realtime hand tracking using neural networks (tensorflowjs)",
+  "main": "src/index.js",
+  "unpkg": "dist/handtrack.min.js",
+  "jsdelivr": "dist/handtrack.min.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victordibia/handtrackjs.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd demo && python3 -m http.server 3005",   
+    "deploy": "gh-pages -d demoreact/build",
+    "srcbuild": "cross-env NODE_ENV=production parcel build --out-dir srcdist demo/index.html",
+    "build" : "rollup -c "
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*",
+    "models/**/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "0.13.5"
+  },
+  "devDependencies": {
+    "@types/jasmine": "~2.8.8",
+    "babel-core": "~6.26.0",
+    "babel-plugin-transform-runtime": "~6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.1.1",
+    "cssnano": "^4.1.8",
+    "gh-pages": "^1.1.0",
+    "rollup-plugin-babel-minify": "^7.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  }
+}
