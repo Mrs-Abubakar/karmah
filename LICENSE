@@ -1,0 +1,16 @@
+MODEL=resnet
+PORT=8513
+
+docker stop $MODEL
+docker rm $MODEL
+
+docker run --detach \
+  --net=host \
+  --restart=always	\
+  --mount type=bind,source=/home/ubuntu/gradiohub-models,target=/models \
+  --name=$MODEL \
+  tensorflow/serving \
+  tensorflow_model_server --rest_api_port=$PORT --model_name=$MODEL --model_base_path=/models/$MODEL
+
+# logs
+docker logs --follow $MODEL  --tail 1000
