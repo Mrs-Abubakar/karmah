@@ -1,0 +1,53 @@
+/* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+}
+
+.navbar-brand
+{
+  font-family: "Lobster", serif;
+  font-size: 24px;
+}
+
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  font-weight: bold;
+}
+
+/* Other Classes for Page Styling */
+
+#download-desktop-app{
+  display: none;
+}
+
+.btn{
+  font-weight: bold;
+}
+
+.container{
+  color:white;
+}
+
+.lead{
+  color: black;  
+}
+
+#user-message{
+  font-size: 2rem !important;
+}
+
+.masthead {
+  background: #eaebe6;
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

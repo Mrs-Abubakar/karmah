@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="download.css">
 
 
     <title>Hello, world!</title>
@@ -24,7 +24,7 @@
         </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">Home
             <span class="sr-only">(current)</span>
           </a>
@@ -32,7 +32,7 @@
         <li class="nav-item">
           <a class="nav-link" href="demo.html">Demo</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="download.html">Download</a>
         </li>
       </ul>
@@ -41,17 +41,23 @@
 </nav>
 
 <!-- Full Page Image Header with Vertically Centered Content -->
-<header class="masthead">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <h1 class="font-weight-light">Touching Your Face is Great</h1>
-        <p class="lead">for getting <a href="https://www.webmd.com/skin-problems-and-treatments/acne/10-tips-for-preventing-pimples#2"><span id="acne">acne</span></a>, or the <a href="https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications.html"><span id="corona">coronavirus</span></a>. Use your webcam to help you stop touching your face</p>
-        <a href="demo.html" class="btn btn-lg btn-info">Try it now ></a>
-      </div>
-    </div>
+    <form class="form-signin">
+  <div class="text-center mb-4">
+
+    <h1 class="h3 mb-3 font-weight-normal">Karma on Chrome is in Beta</h1>
+    <p>Get Early Access -- feel healthy and look pretty everywhere.</p> 
   </div>
-</header>
+
+  <div class="form-label-group">
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputEmail">Email address</label>
+  </div>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Request Access</button>
+  <p class="mt-5 mb-3 text-center">The Karma Chrome extension uses your webcam to take a snapshot of you every 15 seconds and alerts you if you're touching your face.</p>
+  <p class="text-center">We care about your privacy, just like we care about your health and how good you look. Karma runs <strong>locally</strong> so your data never leaves your computer. All snapshots are immediately deleted.</p>
+</form>
+
 
 <!-- Page Content -->
 <!-- <section class="py-5">

@@ -1,0 +1,27 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand
+{
+  font-family: "Lobster", serif;
+  font-size: 24px;
+}
+#acne {
+	font-weight: bold;
+	color: #ca5959;
+}
+#corona {
+	font-weight: bold;
+	color: #718871;
+}
+.lead {
+	padding-top: 20px;
+	padding-bottom: 20px;
+  font-size: 1.5rem !important;
+}
