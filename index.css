@@ -1,10 +1,18 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-image: url('bg.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+#masthead-demo{
+  display: none;
+}
+
+#myvideo{
+  display: none
+
 }
 
 .navbar-brand
@@ -24,4 +32,41 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
   font-size: 1.5rem !important;
+}
+
+
+a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}
+
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  color: white;
+  display: none;
+}
+#download-desktop-app{
+    color: white;
+}
+
+.btn{
+  font-weight: bold;
+}
+
+
+.lead{
+  color: black;  
+}
+
+#user-message{
+  font-size: 2rem !important;
 }
