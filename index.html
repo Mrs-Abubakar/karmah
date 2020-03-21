@@ -52,8 +52,35 @@
   </div>
 
   <div class="container h-100" id="masthead-demo">
+    <div id="selectors">
     <div class="select" id="videoSourceSelectDiv">
-        <label for="videoSource">Video source: &nbsp;&nbsp; </label><select id="videoSource"></select>
+        <label for="videoSource">Webcam source: &nbsp;&nbsp; </label><select id="videoSource"></select>
+    </div>
+    <div class="select" id="videoVisibleSelectDiv">
+        <label for="videoVisible">Video always visible? &nbsp;&nbsp; </label><select id="videoVisible">
+          <option value="visible">Always visible</option>
+          <option value="hidden" selected="selected">Hidden except when hand detected</option>
+        </select>
+    </div>
+    <div class="select" id="GapSelectDiv">
+        <label for="gapSelect">Gap between beeps: &nbsp;&nbsp; </label><select id="gapSelect"> &nbsp;&nbsp;
+          <option value="1">1 second</option>
+          <option value="3" selected="selected">3 seconds</option>
+          <option value="5">5 seconds</option>
+          <option value="10">10 seconds</option>
+          <option value="30">30 seconds</option>
+          <option value="60">60 seconds</option>
+          <option value="300">300 seconds</option>          
+        </select>
+    </div>    
+    <div class="select" id="SensitivitySelectDiv">
+        <label for="sensitivitySelect">Sensitivity threshold: &nbsp;&nbsp; </label><select id="sensitivitySelect">
+          <option value="0.6">Low sensitivity</option>
+          <option value="0.4" selected="selected">In the middle</option>
+          <option value="0.2">Very sensitive</option>
+        </select>
+    </div>    
+
     </div>
 
     <div class="row h-100 align-items-center">
@@ -71,7 +98,7 @@
 
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center" id="download-desktop-app">
-      Karma works even when minimized, just turn your volume up! Want Karma all the time? Try our chrome extension &nbsp; <a href="download.html" class="btn btn-sm btn-info"> Download > </a> 
+      Karma works minimized, just turn your volume up! Want Karma running all the time? Try the chrome extension &nbsp; <a href="download.html" class="btn btn-sm btn-info"> Download > </a> 
     </div>    
   </footer>
 
