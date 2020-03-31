@@ -10,8 +10,8 @@ let imgindex = 1
 let isVideo = false;
 let model = null;
 
-video.width = 500
-video.height = 400
+video.width = 400
+video.height = 300
 
 const modelParams = {
     flipHorizontal: true,   // flip e.g for video  
@@ -303,7 +303,7 @@ function changeWebcam() {
 
 // Selector logic
 
-var isVideoAlwaysVisible = "hidden";
+var isVideoAlwaysVisible = "visible";
 var gapLength = 3;
 var sensitivityThreshold = 0.4;
 
